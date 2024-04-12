@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portpolio/static/css/main.d3f5777e.css",
+    "main.js": "/portpolio/static/js/main.529fa19b.js",
+    "static/media/bus.jpeg": "/portpolio/static/media/bus.3c01e062f4008184a1e0.jpeg",
+    "static/media/M.Nirupan-CV.pdf": "/portpolio/static/media/M.Nirupan-CV.725dc2e65fd832823c97.pdf",
+    "static/media/mini.png": "/portpolio/static/media/mini.8b576cc18db44db17f70.png",
+    "static/media/img1.png": "/portpolio/static/media/img1.32d5418174b3982641a5.png",
+    "static/media/Stupack.jpeg": "/portpolio/static/media/Stupack.d32e428dd7b0c4a68013.jpeg",
+    "static/media/img-about.png.jpeg": "/portpolio/static/media/img-about.png.cc3858596cc8418da868.jpeg",
+    "static/media/c.png": "/portpolio/static/media/c.1e747a40319030a7573e.png",
+    "static/media/java.png": "/portpolio/static/media/java.0e730290aa849848dacc.png",
+    "static/media/html.png": "/portpolio/static/media/html.2ba4fabc69a89a8f71e6.png",
+    "index.html": "/portpolio/index.html",
+    "main.d3f5777e.css.map": "/portpolio/static/css/main.d3f5777e.css.map",
+    "main.529fa19b.js.map": "/portpolio/static/js/main.529fa19b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3f5777e.css",
+    "static/js/main.529fa19b.js"
+  ]
+}
