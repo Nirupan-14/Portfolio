@@ -12,7 +12,7 @@ const About = () => {
 
       </div>
       <div className=' '>
-        <p className='md:text-xl lg:text-[22px] pt-4 md:pt-4  font-normal  '>I'm M. Nirupan, a React Developer passionate about continuous learning and growth. I specialize in frontend development using React and Tailwind CSS to create engaging user experiences. I thrive in collaborative environments, prioritizing communication and teamwork. With strong problem-solving skills and time management, I handle challenges with ease. I lead by example, fostering a supportive environment where everyone's contributions are valued. My interests range from frontend to backend development, full-stack development, and machine learning. Currently seeking an internship opportunity to further enhance my skills and contribute to innovative projects. 
+        <p className='md:text-xl lg:text-[22px] pt-4 md:pt-4  font-normal text-[17px] '>I'm M. Nirupan, a React Developer passionate about continuous learning and growth. I specialize in frontend development using React and Tailwind CSS to create engaging user experiences. I thrive in collaborative environments, prioritizing communication and teamwork. With strong problem-solving skills and time management, I handle challenges with ease. I lead by example, fostering a supportive environment where everyone's contributions are valued. My interests range from frontend to backend development, full-stack development, and machine learning. Currently seeking an internship opportunity to further enhance my skills and contribute to innovative projects. 
         Let's connect and make a positive impact through technology!</p>
           <a href='#Contact'>
           <div className='text-20px  md:font-bold  mr-4 pt-4  md:text-2xl md:pt-8 text-center '>

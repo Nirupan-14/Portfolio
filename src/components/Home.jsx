@@ -58,7 +58,7 @@ const Home = () => {
     />
     </div>
 
-    <p className='text-[15px] pt-2 md:text-[22px] md:pt-6 md:pb-3'>
+    <p className='text-[17px] pt-2 md:text-[22px] md:pt-6 md:pb-3'>
     I am currently pursuing a Bachelor of Information Communication Technology specialized in Software Technology at the University of SriJayewardenepura.
   </p>
 

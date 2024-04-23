@@ -12,7 +12,7 @@ const Projects = () => {
     
           <div className='md:grid md:grid-cols-3 md:gap-16 my-3 md:mx-auto md:w-5/6 pl-8 pr-8'>
 
-         <div className='rounded-md gap-8 shadow-lg text-center my-2 hover:shadow-orange-400 md:w-[360px] w-auto md:h-[500px] h-auto  bg-cover bg-center' >
+         <div className='rounded-md gap-8 shadow-lg text-center my-6 md:my-2 hover:shadow-orange-400 md:w-[360px] w-auto md:h-[500px] h-auto  bg-cover bg-center' >
           <div className='bg-cover' style={{backgroundImage: `url(${img})`, width: 'auto', height: '180px'}}></div>
          <div>
          <h3 className=' text-xl font-semibold pt-4 '>Mini E-commerce Website</h3>
@@ -35,7 +35,7 @@ const Projects = () => {
          </div>
         </div>
 
-        <div className='rounded-md gap-8 shadow-lg text-center my-2 hover:shadow-orange-400 md:w-[360px] w-auto md:h-[500px] h-auto bg-cover bg-center' >
+        <div className='rounded-md gap-8 shadow-lg text-center my-6 md:my-2 hover:shadow-orange-400 md:w-[360px] w-auto md:h-[500px] h-auto bg-cover bg-center ' >
           <div className='bg-cover' style={{backgroundImage: `url(${img1})`, width: 'auto', height: '180px'}}></div>
          <div>
          <h3 className='text-xl font-semibold pt-4'>FOT Stupack Website</h3>
@@ -55,7 +55,7 @@ const Projects = () => {
          </div>
         </div>
 
-        <div className='rounded-md gap-8 shadow-lg text-center my-2 hover:shadow-orange-400 md:w-[360px] w-auto md:h-[500px] h-auto  bg-cover bg-center' >
+        <div className='rounded-md gap-8 shadow-lg text-center my-6 md:my-2 hover:shadow-orange-400 md:w-[360px] w-auto md:h-[500px] h-auto  bg-cover bg-center' >
           <div className='bg-cover bg-center' style={{backgroundImage: `url(${img2})`, width: 'auto', height: '180px'}}></div>
          <div>
          <h3 className='text-xl font-semibold pt-4'>School Bus Tracking System</h3>
