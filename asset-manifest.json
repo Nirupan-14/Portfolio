@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d3f5777e.css",
-    "main.js": "/portfolio/static/js/main.4fc8807e.js",
+    "main.css": "/portfolio/static/css/main.905e6056.css",
+    "main.js": "/portfolio/static/js/main.690ceefc.js",
     "static/media/bus.jpeg": "/portfolio/static/media/bus.3c01e062f4008184a1e0.jpeg",
-    "static/media/M.Nirupan-CV.pdf": "/portfolio/static/media/M.Nirupan-CV.725dc2e65fd832823c97.pdf",
+    "static/media/M.Nirupan-CV.pdf": "/portfolio/static/media/M.Nirupan-CV.6e807259a2e441eb6a54.pdf",
     "static/media/mini.png": "/portfolio/static/media/mini.8b576cc18db44db17f70.png",
     "static/media/img1.png": "/portfolio/static/media/img1.32d5418174b3982641a5.png",
     "static/media/Stupack.jpeg": "/portfolio/static/media/Stupack.d32e428dd7b0c4a68013.jpeg",
@@ -12,11 +12,11 @@
     "static/media/java.png": "/portfolio/static/media/java.0e730290aa849848dacc.png",
     "static/media/html.png": "/portfolio/static/media/html.2ba4fabc69a89a8f71e6.png",
     "index.html": "/portfolio/index.html",
-    "main.d3f5777e.css.map": "/portfolio/static/css/main.d3f5777e.css.map",
-    "main.4fc8807e.js.map": "/portfolio/static/js/main.4fc8807e.js.map"
+    "main.905e6056.css.map": "/portfolio/static/css/main.905e6056.css.map",
+    "main.690ceefc.js.map": "/portfolio/static/js/main.690ceefc.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3f5777e.css",
-    "static/js/main.4fc8807e.js"
+    "static/css/main.905e6056.css",
+    "static/js/main.690ceefc.js"
   ]
 }
