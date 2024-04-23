@@ -6,7 +6,7 @@ import img2 from '../assects/project/bus.jpeg';
 
 const Projects = () => {
   return (
-    <div className=' md:pt-10 pt-6' id='Projects'>
+    <div className=' md:pt-10 pt-6 ' id='Projects'>
         
           <h2 className='text-center font-bold text-4xl     bg-gradient-to-r from-orange-400 to-pink-600  text-transparent bg-clip-text  pb-6 lg:text-5xl'>Our Projects</h2>
     

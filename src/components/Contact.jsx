@@ -46,9 +46,9 @@ export const Contact = () => {
   };
 
   return (
-    <div className='md:pt-10 pt-6' id='Contact'>
+    <div className='md:pt-10 pt-6 ' id='Contact'>
       <h2 className='flex justify-center font-bold text-4xl bg-gradient-to-r from-orange-400 to-pink-600 text-transparent bg-clip-text pb-5 lg:text-5xl'>Contact Me</h2>
-      <div className='pl-8 pr-8 md:pl-36 md:pr-36'>
+      <div className='pl-8 pr-8 md:pl-36 md:pr-36 '>
         <div className='md:flex md:justify-between bg-slate-100 rounded-md shadow-lg hover:shadow-orange-400 mb-6 h-auto'>
           <div className='md:grid md:grid-cols-2'>
             <div>

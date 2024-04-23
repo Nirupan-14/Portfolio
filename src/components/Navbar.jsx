@@ -15,7 +15,7 @@ const Navbar = () => {
 
 
   return (<div className='bg-[#de4646] fixed top-0 w-full' >
-    <nav className='flex justify-between pl-6 pr-6 h-16 px-12 items-center lg:pl-10 lg:pr-10   '>
+    <nav className='flex justify-between pl-6 pr-6 h-16 px-12 items-center md:pl-24 md:pr-24  '>
     <div className='text-2xl font-bold italic border-2 px-4 py-2 '>Niru</div>
    
     <div className={`lg:flex  ${open ? 'block' : 'hidden'}`}>
