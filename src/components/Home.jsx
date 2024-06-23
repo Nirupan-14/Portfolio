@@ -1,97 +1,84 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import { FaLinkedinIn } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa";
+
 import { FaWhatsapp } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import cvFile from "../assects/M.Nirupan-CV.pdf"
-import img from "../assects/my/img1.png";
+import { FaSquareFacebook } from "react-icons/fa6";
+import { FaSquareInstagram } from "react-icons/fa6"; 
+import { FaLocationDot } from "react-icons/fa6";
 
+import backgroundImage1 from '../assects/my/body1.jpg';
+import backgroundImage3 from '../assects/my/bg3.jpeg';
+import backgroundImage4 from '../assects/my/body3.jpg';
+import backgroundImage5 from '../assects/my/body4.webp';
 
-const handleDownloadCV = () => {
-  const link = document.createElement('a');
-  link.href = cvFile;
-  link.setAttribute('download', 'M.Nirupan-CV.pdf'); 
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-};
 const email = 'mosesnirupan@gmail.com';
-const phoneNumber = '+94773706824';
+const phoneNumber = '+94779549474';
 
 const Home = () => {
+  const [currentBgIndex, setCurrentBgIndex] = useState(0);
+  const backgroundImages = [backgroundImage1, backgroundImage3,backgroundImage4,backgroundImage5];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentBgIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [backgroundImages.length]);
+
   return (
-   
-  <div className='' id='Home'>
-    
-    <div className=' pl-6 pr-6 md:flex-col lg:justify-between md:grid md:grid-cols-2 md:pr-24 md:pl-24 ' >
-     
-    <div className=' items-center pt-20  md:hidden'>
-    <img src={img} alt="Pentagon" width='700px' height='400px' class="   object-contain  lg:h-[540px] lg:w-[800px]" />
-    </div>
-    
-
-   
-
-   
-
-      <div className=''>
-        <div className='text-5xl font-bold md:text-6xl  pt-4 md:pt-44'>I'm a</div>
-        
-        <div className='  text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-600  text-[27px] md:text-6xl font-bold lg:pt-5 pt-2' >
-        <TypeAnimation
-      sequence={[
-       
-        'Frondend Developer',
-        1000, 
-        'React Developer',
-        1000,
-        'Full-Stack Developer',
-        1000,
-        'Web Developer',
-        1000
-      ]}
-      wrapper="span"
-      speed={50}
-      style={{  display: 'inline-block' }}
-      repeat={Infinity}
-    />
-    </div>
-
-    <p className='text-[17px] pt-2 md:text-[22px] md:pt-6 md:pb-3'>
-    I am currently pursuing a Bachelor of Information Communication Technology specialized in Software Technology at the University of SriJayewardenepura.
-  </p>
-
-  <div className='flex justift-between gap-4  md:pt-6 pt-4 '>
-  <a href='https://www.linkedin.com/in/moses-nirupan-786979299/'>
-  <FaLinkedinIn className='border border-gray-400 w-8 h-6 md:w-12 md:h-10  md:pt-1 md:pb-1 rounded  shadow-md shadow-orange-400 fill-current hover:bg-gradient-to-r from-orange-400 to-pink-600' /> 
+    <div id='home'>
+      <div
+        className="bg-cover bg-center text-white w-auto h-auto"
+        style={{ backgroundImage: `url(${backgroundImages[currentBgIndex]})` }}
+      >
+        <div className='pl-6 pr-6 md:flex-col lg:justify-between lg:grid lg:grid-cols-2 md:pr-24 md:pl-24'>
+          <div className=''>
+            <div className='text-3xl font-bold md:text-5xl pt-24 md:pt-44'>Join Us in Exploring Nature</div>
+            <div className='bg-gradient-to-r from-orange-400 to-pink-600 text-transparent bg-clip-text text-[27px] md:text-6xl font-bold lg:pt-5 pt-2'>
+              <TypeAnimation
+                sequence={[
+                  'Kumana Safari',
+                  1000,
+                  'Lagoon Safari',
+                  1000,
+                  'Tuk Tuk Safari & Rent',
+                  1000,
+                  'Scooty Rental',
+                  1000,
+                ]}
+                wrapper="span"
+                speed={50}
+                style={{ display: 'inline-block' }}
+                repeat={Infinity}
+              />
+            </div>
+            <p className='text-[17px] pt-2 md:text-[28px] text-bold md:pt-6 md:pb-3'>
+              Welcome to A to Z Travels! Enjoy your trip with unbeatable prices and excellent services. Let us help you discover the beauty of nature like never before.
+            </p>
+            <div className='flex gap-2 md:gap-6 md:pt-6 pt-4 md:pb-44 pb-16'>
+              <a href="https://web.facebook.com/people/Kumuna-Safari/100085533923355/?mibextid=ZbWKwL">
+                <FaSquareFacebook className='border border-gray-400 w-8 h-6 md:w-12 md:h-10 md:pt-1 md:pb-1 rounded shadow-md shadow-orange-400 fill-current hover:bg-gradient-to-r from-orange-400 to-pink-600' />
+              </a>
+              <a href="https://www.instagram.com/kumuna_safari?igsh=ZGUzMzM3NWJiOQ==">
+                <FaSquareInstagram  className='border border-gray-400 w-8 h-6 md:w-12 md:h-10 md:pt-1 md:pb-1 rounded shadow-md shadow-orange-400 hover:bg-gradient-to-r from-orange-400 to-pink-600' />
+              </a>
+              <a href={`https://wa.me/${phoneNumber}`} target='_blank' rel='noopener noreferrer'>
+                <FaWhatsapp className='border border-gray-400 w-8 h-6 md:w-12 md:h-10 md:pt-1 md:pb-1 rounded shadow-md shadow-orange-400 hover:bg-gradient-to-r from-orange-400 to-pink-600' />
+              </a>
+              <a href='https://maps.app.goo.gl/sZquw1GYvKmDXGpE9'>
+                <FaLocationDot className='border border-gray-400 w-8 h-6 md:w-12 md:h-10 md:pt-1 md:pb-1 rounded shadow-md shadow-orange-400 hover:bg-gradient-to-r from-orange-400 to-pink-600' />
+              </a>
+              <a href={`mailto:${email}`}>
+  <SiGmail className='border border-gray-400 w-8 h-6 md:w-12 md:h-10 md:pt-1 md:pb-1 rounded shadow-md shadow-orange-400 hover:bg-gradient-to-r from-orange-400 to-pink-600' />
   </a>
-  <a href='https://github.com/Nirupan-14'>
-  <FaGithub className='border border-gray-400 w-8 h-6 md:w-12 md:h-10  md:pt-1 md:pb-1 rounded  shadow-md shadow-orange-400 hover:bg-gradient-to-r from-orange-400 to-pink-600' />
-  </a>
-  <a href={`https://wa.me/${phoneNumber}`} target='_blank' rel='noopener noreferrer'>
-  <FaWhatsapp className='border border-gray-400 w-8 h-6 md:w-12 md:h-10 md:pt-1 md:pb-1  rounded  shadow-md shadow-orange-400 hover:bg-gradient-to-r from-orange-400 to-pink-600'/>
-  </a>
-  <a href={`mailto:${email}`}>
-  <SiGmail className='border border-gray-400 w-8 h-6 md:w-12 md:h-10  md:pt-1 md:pb-1 rounded  shadow-md shadow-orange-400 hover:bg-gradient-to-r from-orange-400 to-pink-600' />
-  </a>
-  </div>
-  <div className='text-20px  md:font-bold pt-6 mr-4  md:text-2xl md:pt-12 '>
-  <button onClick={handleDownloadCV} className='  w-32 h-10 md:w-44 md:h-14  rounded-md   bg-cover hover:text-white bg-gradient-to-r from-orange-400 to-pink-600 shadow-orange-400 shadow-md'>Dowload CV</button>
-  </div>
-
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div className=' items-center pt-20  md:pt-32 hidden md:block'>
-    <img src={img} alt="Pentagon" width='700px' height='400px' class="   object-contain  lg:h-[490px] lg:w-[800px]" />
-    </div>
-    </div>
-    
-    
+  );
+};
 
-    </div>
-
-    
-  )
-}
-
-export default Home
+export default Home;

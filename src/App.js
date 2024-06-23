@@ -1,25 +1,24 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from "./components/About.jsx";
 import Contact from "./components/Contact.jsx";
-import Education from "./components/Education.jsx";
+import Services from "./components/Services.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "./components/Home.jsx";
 import Navbar from "./components/Navbar.jsx";
-import Projects from "./components/Projects.jsx";
-import Skills from "./components/Skills.jsx";
-
 
 function App() {
   return (
-    <div className="App ">
-      <Navbar/>
-      <Home/>
-      <About/>
-      <Education/>
-      <Skills/>
-      <Projects/>
-      <Contact/>
-      <Footer/>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Home />
+        <About />
+        <Services />
+        <Contact />
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
